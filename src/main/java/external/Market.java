@@ -6,4 +6,6 @@ public interface Market {
     
     public void buy(String stock);
     
+    public void sell(String stock);
+    
 }

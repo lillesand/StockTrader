@@ -9,9 +9,11 @@ public class Trader {
     public Trader(Market market) {
         this.targetMarket = market;
     }
-    
+
     public void makeTransaction() {
-        //TODO: Implement
+        if (targetMarket.price("MSFT") < 120) {
+            targetMarket.buy("MSFT");
+        }
     }
     
 }
